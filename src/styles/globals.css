@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-image: linear-gradient(
+    140deg,
+    hsl(202deg 100% 20%) 1%,
+    hsl(204deg 100% 24%) 39%,
+    hsl(210deg 76% 30%) 47%,
+    hsl(219deg 57% 38%) 50%,
+    hsl(229deg 44% 46%) 51%,
+    hsl(243deg 39% 53%) 51%,
+    hsl(258deg 45% 55%) 50%,
+    hsl(257deg 43% 47%) 49%,
+    hsl(256deg 49% 40%) 49%,
+    hsl(254deg 59% 32%) 50%,
+    hsl(251deg 74% 25%) 53%,
+    hsl(241deg 97% 18%) 61%,
+    hsl(0deg 0% 0%) 99%
+  );
+  background-repeat: no-repeat;
+}
+
+input {
+  border: 0;
+  width: 90%;
+  height: 2rem;
+  outline: 0;
+  font-size: 1.35rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #888; /* Placeholder color */
+}

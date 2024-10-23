@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.generate-button {
+  border: 0;
+  background: #4e45ce;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  height: 3.5rem;
+  width: 150px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.generate-button:hover {
+  background: #3b35a8; /* Darker shade on hover */
+}
+
+.generated-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  border: 5px solid #d5ff00;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 1.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  padding: 0 0 0 4rem;
+}
+
+#input-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  width: 85%;
+  justify-content: space-between;
+  border-radius: 50px;
+  height: 3rem;
+  margin-top: 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column; /* Changed to column for a better layout */
+  align-items: center; /* Centered items */
+  padding: 2rem;
+  width: 80%;
+}
+
+.title-and-input {
+  width: 90%;
+}
+
+.text-and-cat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dancing-cat {
+  width: 60px;
+  height: auto; /* Changed to auto to maintain aspect ratio */
+  object-fit: contain;
+}
