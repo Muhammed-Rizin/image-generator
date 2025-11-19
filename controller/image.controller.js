@@ -22,11 +22,14 @@ export const generate = asyncErrorHandler(async (req) => {
     steps: 25,
   };
 
-  const response = await axios.post(NVIDIA.API_URL, payload, {
-    headers: { Authorization: `Bearer ${NVIDIA.API_KEY}`, Accept: "application/json" },
-  });
+  try {
+    const response = await axios.post(NVIDIA.API_URL, payload, {
+      headers: { Authorization: `Bearer ${NVIDIA.API_KEY}`, Accept: "application/json" },
+    });
 
-  if (!response) throw new ErrorHandler("Error to generate image", 400);
-
-  return new Response("Success", { data: response.data.artifacts[0].base64 }, 200);
+    if (!response) throw new ErrorHandler("Error to generate image", 400);
+    return new Response("Success", { data: response.data.artifacts[0].base64 }, 200);
+  } catch (error) {
+    throw new ErrorHandler(error?.response?.data?.title);
+  }
 });
